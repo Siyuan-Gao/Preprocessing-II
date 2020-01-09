@@ -6,6 +6,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+      @media @mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
    
     
     .text-content {
@@ -21,11 +27,13 @@
         border-radius: 10px;
       }
     }
+    
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
 
     .text-content {
       padding-left: 1%;
@@ -52,10 +60,35 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
   }
-}// home
+// home
+
+
+hr {
+  border-top: 2px dashed #C0C0C0;
+  width: 100%;
+  float: left;
+}
+
+#fun-bus {
+  padding: 2%;
+  p {
+    margin-top: 2%;
+  }
+}
+
+
+.btn {
+  .signUp(#17A2B8, #FFF, 2.4rem);
+  text-align:center;
+  padding: 1%;
+  border-radius: 10%;
+  width: 75%;
+}
+

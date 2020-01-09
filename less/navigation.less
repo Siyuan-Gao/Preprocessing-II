@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+
+  a{
+    padding:0 2%;
+    .flexbox(center, center);
+    text-decoration: none;
+    @media @mobile {
+      width: 100%;
+      padding-top: 2%;
+    }
+
+  }
+
+  @media @mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+}
+
+.nav-a{
+  display:flex;
+  justify-content: flex-end;
+  font-size: 1.7rem;
+  color: F000;
+  width: 80%;
+}
+
+
+
