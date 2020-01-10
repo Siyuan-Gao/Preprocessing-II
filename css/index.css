@@ -229,14 +229,6 @@ nav a {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-@media (max-width: 500px) {
-  .home .content-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-  }
-}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -266,17 +258,13 @@ nav a {
   .home .content-pick {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 300%;
+    margin: 0 7%;
   }
 }
-.home .content-pick .destination {
+.home .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-@media (max-width: 500px) {
-  .home .content-pick .destination {
-    width: 90%;
-  }
 }
 hr {
   border-top: 2px dashed #C0C0C0;
@@ -300,9 +288,24 @@ hr {
 }
 @media (max-width: 500px) {
   .btn {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  #adventure {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  #fun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
   }
 }
